@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family:'Times New Roman', Georgia;
   margin: 0;
   padding: 0;
 }
@@ -16,7 +16,8 @@ h1 {
   box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);  
 }
 
-#logo{
+#logo {
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,8 +102,8 @@ input, textarea {
 button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: rgb(255, 231, 170);
-  color: #333;
+  background-color: #5d5752;
+  color: #ffffff;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -110,7 +111,8 @@ button {
 }
 
 button:hover {
-  background-color: #f6d79f;
+  color: #000000;
+  background-color: #5d57527;
 }
 
 .contact-info {
