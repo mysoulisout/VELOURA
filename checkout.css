@@ -2,8 +2,8 @@ body {
     font-family: 'Times New Roman', Georgia;
     margin: 0;
     padding: 0;
-    background-color: #aa8876b3;
-    color: #333;
+    background-color: #534841b3;
+    color: #000000;
 }
 
 .checkout-container {
@@ -11,7 +11,7 @@ body {
     max-width: 1000px;
     font-size: 20px;
     margin: 20px auto;
-    background: #d7d3d1;
+    background: #e3ddd9;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(192, 172, 172, 0.1);
@@ -27,10 +27,8 @@ body {
 }
 
 #logo img {
-    width: 90px; 
-    height: auto; 
-    display: block;
-    margin: 0 auto; 
+    width: 80px; 
+    height: auto;
 }
 
 .progress-indicator {
@@ -46,7 +44,7 @@ body {
     flex: 1;
     text-align: center;
     padding: 10px;
-    background: #e0e0e0;
+    background: #bbb6b6;
     border-radius: 4px;
     margin: 0 5px;
     cursor: pointer;
@@ -54,7 +52,7 @@ body {
 }
 
 .progress-indicator .step.active {
-    background: #927966;
+    background: #5d5752;
     color: #fff;
 }
 
@@ -90,9 +88,9 @@ form button {
     font-family: 'Times New Roman', Georgia;
     padding: 10px;
     font-size: 20px;
-    background: #ecd7b1;
-    color: rgb(56, 53, 53);
-    border: #837561;
+    background: #5f5d59;
+    color: rgb(255, 255, 255);
+    border: #343733;
     cursor: pointer;
     border-radius: 7px;
     width: 100%;
@@ -100,15 +98,15 @@ form button {
 }
 
 form button:hover {
-    background: #837561;
+    color: #2b2929;
+    background: #5f5d59;
 }
 
 .order-summary {
     float: left;
-    background: #c9baba;
+    background: #928585;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .order-summary h2 {
@@ -135,38 +133,6 @@ form button:hover {
     font-size: 18px;
 }
 
-.order-actions {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.order-actions button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.order-actions .cancel-btn {
-    background: #f44336;
-    color: white;
-}
-
-.order-actions .cancel-btn:hover {
-    background: #e53935;
-}
-
-.order-actions .continue-btn {
-    background: #c2b1a5;
-    color: white;
-}
-
-.order-actions .continue-btn:hover {
-    background: #987c52;
-}
-
 @media (max-width: 768px) {
     .checkout-container {
         padding: 15px;
@@ -189,4 +155,8 @@ form button:hover {
     .order-summary {
         padding: 15px;
     }
+}.order-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
