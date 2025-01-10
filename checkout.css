@@ -26,6 +26,13 @@ body {
     margin-bottom: 30px;
 }
 
+#logo img {
+    width: 90px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+
 .progress-indicator {
     width: 100%;
     display: flex;
@@ -76,7 +83,7 @@ form input, form select {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 13px;
-    width: 40%;
+    width: 90%;
 }
 
 form button {
@@ -88,7 +95,7 @@ form button {
     border: #837561;
     cursor: pointer;
     border-radius: 7px;
-    width: 50%;
+    width: 100%;
     transition: background 0.3s;
 }
 
