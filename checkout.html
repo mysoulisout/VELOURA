@@ -1,0 +1,53 @@
+<!-- HTML file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="header">
+            <img src="WhatsApp Image 2025-01-09 at 11.26.36_1157ee8c.jpg"  alt="Veloura Logo">       
+        </div>
+
+        <!-- Progress Indicator -->
+        <div class="progress-indicator">
+            <div class="step active">Account</div>
+            <div class="step">Shipping</div>
+            <div class="step">Payment</div>
+        </div>
+
+        <!-- Dynamic Form Section -->
+        <div class="form-section">
+            <!-- Content will be dynamically added here -->
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-item">
+                <span>Mira Abaya</span>
+                <span>RM 189.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Shipping Details:</span>
+                <span id="shipping-summary">No shipping details saved yet</span>
+            </div>
+            <div class="summary-item">
+                <span>Gift Card/Discount Code</span>
+                <input type="text" id="discount-code" placeholder="Enter code">
+                <button id="apply-code">Apply</button>
+            </div>
+            <div class="summary-item total">
+                <span>Total:</span>
+                <span>RM 189.00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="scriptvl.js"></script>
+</body>
+</html>
