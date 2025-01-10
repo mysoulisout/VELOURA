@@ -10,8 +10,9 @@ h1 {
 
 #header {
   display: grid;
-  padding: 20px 80px;
-  background:rgb(255, 231, 170);
+  padding: 20px 75px;
+  border-radius: 19px;
+  background:rgb(209, 203, 187);
   box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);  
 }
 
