@@ -7,25 +7,23 @@ body {
 }
 
 .checkout-container {
-    max-width: 1200px;
+    font-family: 'Times New Roman', Georgia;
+    max-width: 1000px;
+    font-size: 20px;
     margin: 20px auto;
     background: #d7d3d1;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(192, 172, 172, 0.1);
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .header {
-    width: 100%;
+    width: 200%;
     text-align: center;
     margin-bottom: 30px;
-}
-
-.header img {
-    max-height: 50px;
 }
 
 .progress-indicator {
@@ -34,7 +32,7 @@ body {
     justify-content: space-between;
     margin-bottom: 30px;
     padding: 10px 0;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #47433f;
 }
 
 .progress-indicator .step {
@@ -73,12 +71,12 @@ form label {
 }
 
 form input, form select {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 80%;
+    border-radius: 13px;
+    width: 40%;
 }
 
 form button {
@@ -89,8 +87,8 @@ form button {
     color: rgb(56, 53, 53);
     border: #837561;
     cursor: pointer;
-    border-radius: 4px;
-    width: 83%;
+    border-radius: 7px;
+    width: 50%;
     transition: background 0.3s;
 }
 
