@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const steps = document.querySelectorAll(".progress-indicator .step");
     const formSection = document.querySelector(".form-section");
     const shippingSummary = document.getElementById("shipping-summary");
+    const cancelOrderButton = document.getElementById("cancel-order");
+    const orderItem = document.getElementById("order-item");
+    const totalAmount = document.getElementById("total-amount");
+
     let shippingDetails = null;
 
     const sections = {
@@ -66,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const postcode = document.getElementById("postcode").value;
 
                 if (address && city && postcode) {
-                    shippingDetails = `${address}, ${postcode} ,${city}`;
+                    shippingDetails = `${address}, ${postcode}, ${city}`;
                     shippingSummary.textContent = shippingDetails;
                     alert("Shipping details saved successfully!");
                     activateStep("Payment");
@@ -81,19 +85,31 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.body.innerHTML = `
                     <div class="order-confirmation">
                         <h2>Order Confirmation</h2>
-                        <p>Your order has been successfully received.</p>
-                        <p>Order Details:</p>
-                        <ul>
-                            <li>Item: Mira Abaya</li>
-                            <li>Price: RM 189.00</li>
-                            <li>Shipping: ${shippingDetails}</li>
-                        </ul>
-                        <p>Thank you for shopping with us!</p>
+                        <p>Your order has been successfully received. We’re excited to have served you!</p>
+                        <div class="order-details">
+                            <h3>Order Details:</h3>
+                            <ul>
+                                <li><strong>Item:</strong> Mira Abaya</li>
+                                <li><strong>Price:</strong> RM 189.00</li>
+                                <li><strong>Shipping:</strong> ${shippingDetails}</li>
+                            </ul>
+                        </div>
+                        <p>Thank you for shopping with us! Your satisfaction is our priority.</p>
                     </div>
                 `;
             });
         }
     }
+
+    cancelOrderButton.addEventListener("click", () => {
+        orderItem.style.display = "none";
+        totalAmount.textContent = "RM 0.00";
+        alert("Order has been canceled.");
+    });
+
+    activateStep("Account");
+});
+
 
     // Initial load
     activateStep("Account");
