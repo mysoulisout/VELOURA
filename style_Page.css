@@ -24,9 +24,14 @@ h1 {
 }
 
 #icons {
+  list-style: none;
   display: flex;
-  align-items: center;
+  gap: 8px; 
   justify-content: flex-end;
+  align-items: center;
+  position: absolute; 
+  right: 20px; 
+  top: 35px; 
 
 }
 
