@@ -1,5 +1,5 @@
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family:'Times New Roman', Georgia;
   margin: 0;
   padding: 0;
 }
@@ -11,23 +11,32 @@ body {
 /*Header-home page */
 #header {
   display: grid;
-  padding: 20px 80px;
-  background:rgb(255, 231, 170);
+  padding: 20px 75px;
+  border-radius: 19px;
+  background:rgb(209, 203, 187);
   box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
   top: 0;
   left: 0;
 }
 
-#logo{
+#logo {
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #icons {
+  list-style: none;
   display: flex;
-  align-items: center;
+  gap: 8px; 
   justify-content: flex-end;
+  align-items: center;
+  position: absolute; 
+  right: 20px; 
+  top: 35px; 
 
 }
 
@@ -91,7 +100,7 @@ body {
 /*Footer-home page*/
 
 #footer {
-  background-color: #f6d79f;
+  background-color:rgb(209, 203, 187);
 }
 
 .cont-info {
@@ -166,8 +175,8 @@ input, textarea {
 button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: rgb(255, 231, 170);
-  color: #333;
+  background-color: #5d5752;
+  color: #ffffff;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -175,7 +184,8 @@ button {
 }
 
 button:hover {
-  background-color: #f6d79f;
+  color: #000000;
+  background-color: #5d5752;
 }
 
 .contact-info {
