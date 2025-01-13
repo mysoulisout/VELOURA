@@ -11,7 +11,7 @@
   <body>
     <header id="header">
       <div id="logo">
-        <a href=""><img src="" alt="VELOURA logo"></a>
+        <a href="Home_page.html"><img src="velora logo.png" alt="VELOURA logo" width="100" height="100"></a>
       </div>
       <div>
         <ul id="icons">
@@ -41,18 +41,22 @@
             <div class="contact-wrapper">
                 <div class="contact-form">
                     <h3>Let's Chat</h3>
-                    <form>
+                    <form id="contactForm">
                         <div class="form-details">
                             <input type="text" name="name" placeholder="Name">
+                            <span id="nameError" class="error"></span>
                         </div>
                         <div class="form-details">
                             <input type="email" name="email" placeholder="Email">
+                            <span id="emailError" class="error"></span>
                         </div>
                         <div class="form-details">
                             <textarea name="message" placeholder="Message"></textarea>
+                            <span id="messageError" class="error"></span>
                         </div>
                         <button type="submit">Send Message</button>
                     </form>
+                    <div id="successMessage"></div>
                 </div>
                 <div class="contact-info">
                     <h3>Contact Information</h3>
@@ -63,6 +67,6 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script_ContactPage.js"></script>
   </body>
 </html>
