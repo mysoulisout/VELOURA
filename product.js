@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     checkoutBtn.addEventListener("click", () => {
-        window.location.href = "checkout.html"; // Redirect to the checkout page
+        window.location.href = "checkout.html"; 
     });
 
     filterButtons.forEach(button => {
