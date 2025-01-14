@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const steps = document.querySelectorAll(".progress-indicator .step");
     const formSection = document.querySelector(".form-section");
+    const orderItem = document.getElementById("order-item");
     const shippingSummary = document.getElementById("shipping-summary");
     let shippingDetails = null;
 
@@ -84,17 +85,20 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p>Your order has been successfully received.</p>
                         <p>Order Details:</p>
                         <ul>
-                            <li>Item: Mira Abaya</li>
-                            <li>Price: RM 189.00</li>
+                            <li>Item: Ryna Kurung, Abaya Ruby</li>
+                            <li>Price: RM 339.00</li>
                             <li>Shipping: ${shippingDetails}</li>
                         </ul>
                         <p>Thank you for shopping with us!</p>
                     </div>
                 `;
             });
-        }
-    }
+        }cancelOrderButton.addEventListener("click", () => {
+        orderItem.summary.style.display = "none";
+        totalAmount.textContent = "RM 0.00";
+        alert("Order has been canceled.");
+    });
+}
 
-    // Initial load
     activateStep("Account");
 });
