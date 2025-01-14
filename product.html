@@ -1,43 +1,40 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="style_Page.css">
+    <link rel="stylesheet" href="checkout.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <header id="header">
-        <div id="header-content">
-            <div id="logo">
-                <a href="#"><img src="velouraLogo.jpg" alt="VELOURA logo"></a>
-            </div>
-            
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#">NEW ARRIVALS</a></li>
-                    <li><a href="#">BAJU KURUNG</a></li>
-                    <li><a href="#">ABAYA</a></li>
-                    <li><a href="#">HIJABS</a></li>
-                    <li><a href="#">SPORTSWEAR</a></li>
-                    <li><a href="#">DRESS</a></li>
-                    <li><a href="#">INNERS</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                </ul>
-            </nav>
-
-            <div id="header-icons">
-                <ul>
-                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
+    <body>
+        <header id="header">
+          <div id="logo">
+            <a href="Home_page.html"><img src="velora logo 1.png" alt="VELOURA logo" width="100" height="100"></a>
+          </div>
+          <div>
+            <ul id="icons">
+              <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+              <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+              <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+              <li><a id="cart-icon" href="#"><i class="fa-solid fa-bag-shopping"></i><span id="cart-count">0</span></a></li>
+            </ul>
+          </div>
+          <nav>
+            <ul id="navbar">
+              <a href="">NEW ARRIVALS</a>
+              <a href="">BAJU KURUNG</a>
+              <a href="">ABAYA</a>
+              <a href="">HIJABS</a>
+              <a href="">SPORTSWARE</a>
+              <a href="">DRESS</a>
+              <a href="">INNERS</a>
+              <a href="#">CONTACT US</a>
+            </ul>
+          </nav>
+        </header>
     <main class="product-container">
         <h1>Our Products</h1>
         <div class="filter-section">
@@ -54,6 +51,12 @@
         </div>
     </main>
     
+  <div id="cart-modal" class="hidden">
+    <h2>Cart</h2>
+    <div id="cart-items"></div>
+    <button id="checkout-btn">Checkout</button>
+    <button id="close-cart">Close</button>
+  </div>
     <script src="product.js"></script>
 </body>
 </html>
